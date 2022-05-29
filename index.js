@@ -8,7 +8,7 @@ app.use(express.static('./public'));
 app.set('view engine', 'ejs');
 app.set('views','./views');
 
-app.get("/query", (req, res) => {
+app.get("/video.mp4", (req, res) => {
     let url = req.query["teste"]
     if(url){
         res.header("Content-Disposition", '"attachmentt; filename="video.mp4"')
